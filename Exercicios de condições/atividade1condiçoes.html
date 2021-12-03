@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        let note1 = parseFloat(window.prompt('Qual a primeira nota do aluno?'))
+        let note2 = parseFloat(window.prompt('Qual a segunda nota do aluno?'))
+        let note3 = parseFloat(window.prompt('Qual a terceira nota do aluno?'))
+        let medialNote = ((note1 + note2 + note3) / 3)
+
+        
+
+
+        if (medialNote >= 7) {
+            document.write('Parabéns, aluno aprovado! Média:' + medialNote)
+        }
+
+        else if (medialNote < 7) {
+            document.write('Infelizmente o aluno não está aprovado. Média:' + medialNote)
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

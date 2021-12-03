@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userInputVote = window.prompt(`
+    Digite 1 para votar na Alessandra
+    Digite 2 para votar no Caio
+    Digite 3 para votar no Geraldo
+    Digite 4 para votar na Talita
+    Digite 5 para Sair`)
+        let alessandra = 0
+        let caio = 0
+        let geraldo = 0
+        let talita = 0
+        let isVoting = true
+
+        while (isVoting) {
+
+            userInputVote = window.prompt(`
+    Digite 1 para votar na Alessandra
+    Digite 2 para votar no Caio
+    Digite 3 para votar no Geraldo
+    Digite 4 para votar na Talita
+    Digite 5 para Sair`)
+        }
+
+        switch (userInputVote) {
+            case '1':
+                alessandra++
+
+
+                break
+            case '2':
+                caio++
+
+
+                break
+            case '3':
+
+                geraldo++
+
+                break
+            case '4':
+
+                talita++
+
+                break
+            case '5':
+                isVoting = false
+                break
+                alert('invalid option')
+        }
+
+        document.write(`
+    1 - Alessandra: ${alessandra}<br>
+    2 - Caio: ${caio}<br> 
+    3 - Geraldo: ${geraldo}<br> 
+    4 - Talita: ${talita}<br> 
+    `)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salary = parseFloat(window.prompt('Informe seu salário'))
+
+        if (salary < 280){
+            alert('Você recebe R$' + salary + ' ' + 'e terá um reajuste de 20%, representando R$'
+            + (salary * 0.2) + 'passando a receber R$' + ((salary * 0.2) + salary) + ".")
+        }
+        else if (salary > 280 && salary <= 700){
+            alert('Você recebe R$' + salary + ' ' + 'e terá um reajuste de 15%, representando R$'
+            + (salary * 0.15) + 'passando a receber R$' + ((salary * 0.15) + salary) + ".")
+        }
+        else if (salary > 700 && salary <= 1500){
+            alert('Você recebe R$' + salary + ' ' + 'e terá um reajuste de 10%, representando R$'
+            + (salary * 0.1) + 'passando a receber R$' + ((salary * 0.1) + salary) + ".")
+        }
+        
+        else {
+            alert('Você recebe R$' + salary + ' ' + 'e terá um reajuste de 5%, representando R$'
+            + (salary * 0.05) + 'passando a receber R$' + ((salary * 0.05) + salary) + ".")
+        }
+    </script>
+    
+</body>
+</html>

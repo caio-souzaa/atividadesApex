@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstGradeUserInput = parseFloat(window.prompt("Digite a primeira nota"))
+        let secondGradeUserInput = parseFloat(window.prompt('Digite a segunda nota'))
+        let resultAverage = ((firstGradeUserInput + secondGradeUserInput) / 2). toFixed(2)
+
+            if (resultAverage >= 9){
+            alert('Parabéns você foi aprovado, tirou A')
+            } 
+           
+            else if (resultAverad >= 7.5) {
+            alert('Parabéns você foi aprovado, tirou B')
+            }
+
+            else if (resultAverad >= 6.0) {
+                alert('Parabéns você foi aprovado, tirou C')
+            }
+           
+
+            else if (resultAverad >= 4.0) {
+                alert('Parabéns você foi aprovado, tirou D')
+            }
+           
+
+            else {
+                alert('Você foi reprovado, tirou D')
+            }
+    </script>
+    
+</body>
+</html>

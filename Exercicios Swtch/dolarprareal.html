@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const selectedConversion = window.prompt(`
+    Digite 1 para converter de REAL => DOLAR
+    Digite 2 para converter de DOLAR => REAL
+    Digite 3 para converter de REAL => EURO
+    Digite 4 para converter de EURO => REAL`)
+    const userMoney = window.prompt('Digite o valor')
+
+    switch (selectedConversion) {
+        case '1':
+            alert(userMoney * 0.18)
+            break
+        case '2':
+            alert(userMoney * 5.68)
+            break
+        case '3':
+            alert(userMoney * 0.15)
+            break
+        case '4':
+            alert(userMoney * 6.59)
+            break
+        default:
+            alert('invalid option')
+            break
+    }
+        
+    </script>
+    
+</body>
+</html>
